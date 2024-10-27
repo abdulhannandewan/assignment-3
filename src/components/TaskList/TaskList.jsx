@@ -45,7 +45,7 @@ const TaskList = ({ taskName, task }) => {
       <div className={`rounded-lg ${bgColor} p-4`}>
         <div className="mb-2 flex items-center justify-between">
           <h3 className="text-lg font-semibold">
-            {taskName} ({task.length}) Mannan
+            {taskName} ({task.length})
           </h3>
           <div onClick={() => setIsSorted(!isSorted)}>
             <svg
