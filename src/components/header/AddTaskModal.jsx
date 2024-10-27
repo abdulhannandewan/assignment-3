@@ -32,13 +32,16 @@ const AddTaskModal = ({ handleIsOpen }) => {
   };
 
   return (
+
+   <>
+       <div className="bg-black bg-opacity-70 h-full w-full z-10 absolute top-0 left-0 "></div>
     <div className="flex min-h-screen items-center justify-center bg-gray-900 p-4 text-white">
-      <div className="w-full max-w-md rounded-lg bg-gray-800 shadow-xl">
+      <div className="w-full max-w-md rounded-lg bg-gray-800 shadow-xl mx-auto my-10 w-full max-w-[740px] rounded-xl border border-[#FEFBFB]/[36%] bg-[#191D26] p-9 max-md:px-4 lg:my-20 lg:p-11 z-10 absolute bottom-16 ">
         <div className="p-6">
           <h2 className="mb-6 text-2xl font-bold text-green-400">
             Create Task
           </h2>
-          <form>
+          <form >
             <div className="mb-4">
               <label
                 htmlFor="taskName"
@@ -130,6 +133,7 @@ const AddTaskModal = ({ handleIsOpen }) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
